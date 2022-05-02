@@ -16,7 +16,7 @@ public class TextCRUD {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
         SqlSession sqlSession = sqlSessionFactory.openSession(true);
 
-        Student s = new Student(1, "王政普", 22, "男", "2819645829@qq.com");
+        Student s = new Student(3, "王政普", 22, "男", "2819645829@qq.com");
 
         StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
         int i = mapper.insertStudent(s);
